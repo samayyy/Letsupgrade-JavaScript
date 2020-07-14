@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Assignment1a</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+<body>
+	<script>
+		var date=new Date();
+		var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		document.write("Today is: "+days[date.getDay()]);
+		var hours=date.getHours();
+		if(hours>=12){
+			hours-=12;
+			document.write("<br> Current time is: "+hours+" : "+date.getMinutes()+" : "+date.getSeconds()+" PM");
+		}
+		else{
+			document.write("<br> Current time is: "+hours+" : "+date.getMinutes()+" : "+date.getSeconds()+" AM");
+		}
+	</script>
+</body>
+</html>
